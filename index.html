@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ray Foundation Case Study | Shengbe Koker</title>
+  <meta
+    name="description"
+    content="Community impact and nonprofit support work with Ray Foundation by Shengbe Koker."
+  />
+
+  <style>
+    :root{
+      --bg:#08101f;
+      --bg2:#0d1630;
+      --text:#eef2ff;
+      --muted:#a8b4d8;
+      --accent:#7c5cff;
+      --accent2:#19d3ae;
+      --stroke:rgba(255,255,255,.10);
+      --stroke-strong:rgba(255,255,255,.16);
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+      --shadow-lg:0 28px 90px rgba(0,0,0,.45);
+      --radius:24px;
+      --max:1100px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(124,92,255,.20), transparent 28%),
+        radial-gradient(circle at top right, rgba(25,211,174,.10), transparent 24%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      line-height:1.7;
+    }
+
+    a{text-decoration:none;color:inherit}
+
+    .container{
+      width:min(92%, var(--max));
+      margin:0 auto;
+    }
+
+    .nav{
+      position:sticky;
+      top:0;
+      z-index:100;
+      backdrop-filter:blur(16px);
+      background:rgba(7,11,24,.72);
+      border-bottom:1px solid var(--stroke);
+    }
+
+    .nav-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:16px 0;
+      flex-wrap:wrap;
+    }
+
+    .brand{
+      font-weight:800;
+      font-size:1rem;
+    }
+
+    .nav-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:12px;
+      font-weight:800;
+      border:1px solid var(--stroke);
+      transition:.2s ease;
+      background:rgba(255,255,255,.05);
+      color:var(--text);
+    }
+
+    .btn:hover{
+      transform:translateY(-2px);
+      background:rgba(255,255,255,.10);
+    }
+
+    .hero{
+      padding:68px 0 24px;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(124,92,255,.14);
+      border:1px solid rgba(124,92,255,.28);
+      color:#ddd3ff;
+      font-size:.82rem;
+      font-weight:800;
+      letter-spacing:.04em;
+      margin-bottom:14px;
+    }
+
+    h1{
+      margin:0 0 12px;
+      font-size:clamp(2.2rem, 5vw, 3.7rem);
+      line-height:1.05;
+      letter-spacing:-.04em;
+    }
+
+    .sub{
+      margin:0;
+      color:var(--muted);
+      max-width:780px;
+      font-size:1.04rem;
+    }
+
+    .metrics{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin:28px 0 24px;
+    }
+
+    .metric-card,
+    .card{
+      border:1px solid var(--stroke);
+      border-radius:var(--radius);
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(14px);
+    }
+
+    .metric-card{
+      padding:20px;
+    }
+
+    .metric-card strong{
+      display:block;
+      font-size:1.12rem;
+      margin-bottom:6px;
+    }
+
+    .metric-card span{
+      color:var(--muted);
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      padding:8px 0 64px;
+    }
+
+    .card{
+      padding:24px;
+    }
+
+    .card.full{
+      grid-column:1 / -1;
+    }
+
+    .card h2{
+      margin:0 0 12px;
+      font-size:1.12rem;
+    }
+
+    .card p,
+    .card li{
+      color:var(--muted);
+    }
+
+    .card ul{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .highlight{
+      padding:18px;
+      border-radius:18px;
+      border:1px solid rgba(124,92,255,.25);
+      background:rgba(124,92,255,.10);
+      color:#ece7ff;
+      margin-top:14px;
+    }
+
+    .highlight strong{
+      display:block;
+      margin-bottom:6px;
+    }
+
+    @media (max-width:900px){
+      .metrics,
+      .grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Shengbe Koker</div>
+      <div class="nav-actions">
+        <a href="https://ray-foundation.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn">Visit Foundation</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <span class="eyebrow">Community Impact & Nonprofit Work</span>
+      <h1>Ray Foundation — Community Support & Fundraising Impact</h1>
+      <p class="sub">
+        A real-world case study showing how I supported a nonprofit through fundraising assistance,
+        collaboration with leadership, and digital contribution through web design and development.
+      </p>
+    </section>
+
+    <section class="metrics">
+      <div class="metric-card">
+        <strong>Fundraising Support</strong>
+        <span>Helped with donation-related tasks and outreach support.</span>
+      </div>
+      <div class="metric-card">
+        <strong>Leadership Collaboration</strong>
+        <span>Worked alongside Raymond, the CEO of the foundation.</span>
+      </div>
+      <div class="metric-card">
+        <strong>Digital Contribution</strong>
+        <span>Building a modern website presence for the organization.</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Overview</h2>
+        <p>
+          Ray Foundation is a mission-driven organization focused on improving lives through education,
+          healthcare, clean water access, and community development. My involvement gave me the chance
+          to contribute to a meaningful cause while supporting work that creates visible impact.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>My Role</h2>
+        <ul>
+          <li>Helped with fundraising-related tasks and donation support efforts.</li>
+          <li>Worked alongside Raymond, the CEO of the foundation.</li>
+          <li>Supported the organization through practical collaboration and contribution.</li>
+          <li>Started creating a modern website to strengthen the foundation’s online presence.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Personal Connection</h2>
+        <p>
+          This work is meaningful to me because both Raymond and I come from the same hometown and country,
+          Sierra Leone. That shared background made the mission feel more personal and strengthened my desire
+          to contribute in a way that goes beyond technical work.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>What I Contributed</h2>
+        <ul>
+          <li>Supported donation-focused efforts that help fund real community work.</li>
+          <li>Contributed time and effort to help the organization move its mission forward.</li>
+          <li>Applied design and development skills to improve the foundation’s visibility.</li>
+          <li>Helped connect technical contribution with a meaningful community-centered purpose.</li>
+        </ul>
+      </article>
+
+      <article class="card full">
+        <h2>Website Contribution</h2>
+        <p>
+          One of the strongest parts of my contribution is building a nice, modern website presence for the
+          foundation. This helps the organization communicate its mission more clearly, present its work more
+          professionally, and improve how supporters connect with the cause online.
+        </p>
+        <div class="highlight">
+          <strong>What this proves</strong>
+          I can contribute in real-world environments, support nonprofit and fundraising efforts, collaborate
+          with leadership, and apply technical skills in ways that create impact beyond classroom projects.
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Skills Demonstrated</h2>
+        <ul>
+          <li>Fundraising support</li>
+          <li>Leadership collaboration</li>
+          <li>Community-oriented thinking</li>
+          <li>Communication and trust</li>
+          <li>Web design and front-end development</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Why It Matters</h2>
+        <p>
+          This project adds a different kind of strength to my portfolio. It shows that I can work not only on
+          analytics and technical systems, but also on mission-driven, people-centered work that requires trust,
+          initiative, and real responsibility.
+        </p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
